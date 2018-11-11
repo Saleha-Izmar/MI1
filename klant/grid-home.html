@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+.item1 { grid-area: header; }
+.item2 { grid-area: slider; }
+.item3 { grid-area: nieuwproduct; }
+.item4 { grid-area: footer; }
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+      'header header header header header'
+      'slider slider slider slider slider'
+      'slider slider slider slider slider'
+       'slider slider slider slider slider'
+      'nieuwproduct nieuwproduct nieuwproduct nieuwproduct nieuwproduct'
+      'nieuwproduct nieuwproduct nieuwproduct nieuwproduct nieuwproduct'
+      'nieuwproduct nieuwproduct nieuwproduct nieuwproduct nieuwproduct'
+      'footer footer footer footer footer';
+      
+  grid-gap: 10px;
+  background-color: rosybrown;
+  padding: 5px;
+}
+.grid{
+     display: grid;
+  height: 400px;
+  align-content: start;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  
+  padding: 10px; 
+    }
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+.item1 {
+ height: 100px;
+}
+.item2 {
+ height: 200px;
+}
+.item3 {
+  
+}
+.itemx {
+  background-color: antiquewhite;
+    
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item4{
+      height: 100px;
+    }
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1">header</div>
+  <div class="item2">slider</div>
+  <div class="item3">nieuwproducten
+      
+      <div class="grid">
+          
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+     
+          
+    </div>
+      
+    </div>  
+  <div class="item4">footer</div>
+
+  
+</div>
+
+</body>
+</html>

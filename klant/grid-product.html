@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+.item1 { grid-area: header; }
+.item2 { grid-area: categorie; }
+.item3 { grid-area: product; }
+.item4 { grid-area: footer; }
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+      'header header header header header'
+      'categorie product product product product'
+      'categorie product product product product'
+      'categorie product product product product'
+      'categorie product product product product'
+      'footer footer footer footer footer';
+      
+  grid-gap: 10px;
+  background-color: rosybrown;
+  padding: 5px;
+}
+.grid{
+     display: grid;
+  height: 400px;
+  align-content: start;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  
+  padding: 10px; 
+    }
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+.item1 {
+ height: 100px;
+}
+.item2 {
+ 
+}
+.item3 {
+  
+}
+.itemx {
+  background-color: antiquewhite;
+    
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item4{
+      height: 100px;
+    }
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1">header</div>
+  <div class="item2">categorie</div>
+  <div class="item3">producten
+      
+      <div class="grid">
+          
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+      <div class="itemx">product</div>
+     
+          
+    </div>
+      
+    </div>  
+  <div class="item4">footer</div>
+
+  
+</div>
+
+</body>
+</html>
