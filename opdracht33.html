@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Formulier</title>
+    <style>
+        textarea{
+            height: auto;
+            width: 90%;
+        } 
+        body{
+            margin: 10%;
+        }
+        input[type=submit,radio,date,checkbox]:hover {
+    background-color: #45a049;
+}
+        input[type=text], select  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+        </style>
+    </head>
+<body>
+<h1>Formulier</h1>
+
+<form action="mailto:saleha.izmar@student.odisee.be" method="post">
+  First name:<br>
+  <input type="text" name="firstname" value="" placeholder="schrijf je voornaam" autofocus>
+  <br><br>
+    
+  Last name:<br>
+  <input type="text" name="lastname" value="" placeholder="schrijf je achternaam">
+  <br><br>
+    
+    email address:<br>
+  <input type="text" name="lastname" value="" placeholder="schrijf je email adres">
+  <br><br>
+    
+    Geslacht:<br>
+    <input type="radio" name="gender" value="man" checked> Male<br>
+  <input type="radio" name="gender" value="vrouw"> Female<br>
+    <br><br>
+    Geboortedatm:
+    <input type="date" name="bday" max="2018-11-28" value="1999-07-12">
+    <br><br>
+    Wat zijn jouw favoriete vakken:<br>
+    <input type="checkbox" name="Mobile&internet" value="mobile&internet">mobile en internet
+<br>
+<input type="checkbox" name="AD" value="AD">AD
+    <br>
+    <input type="checkbox" name="database" value="database">database
+    <br>
+    <input type="checkbox" name="SE" value="SE">SE
+<br>
+<br><br>
+    Beoogde punten MI1:<br>
+   
+  10
+  <input type="range" id="a" name="a" value="2">
+  20
+     <output name="x" for="a"></output>
+    <br><br>
+    
+    Leukste dagen van de week:
+    <br>
+<input type="checkbox" name="maandag" value="maandag">maandag
+    <br>
+    <input type="checkbox" name="dinsdag" value="dinsdag">dinsdag
+    <br>
+    <input type="checkbox" name="woensdag" value="woensdag">woensdag
+          <br>
+     <input type="checkbox" name="donderdag" value="donderdag">donderdag
+      <br>
+     <input type="checkbox" name="vrijdag" value="vrijdag">vrijdag
+<br>
+     <input type="checkbox" name="zaterdag" value="zaterdag">zaterdag
+      <br>
+     <input type="checkbox" name="zondag" value="zondag">zondag
+<br>
+<br><br>
+    Opmerking:<br>
+    <textarea name="message" placeholder="hier kan je commentaar schrijven"></textarea>
+  <br>
+    
+  <input type="submit" value="versturen">
+</form> 
+
+
+
+</body>
+</html>
