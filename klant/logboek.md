@@ -13,3 +13,7 @@
 20/11/2018 Ik heb de repository van een medestudent besproken.
 
 22/11/2018 Ik ben begonnen met de website te maken voor ATIT Computers, gebaseerd op float.Logo, nav en enkele articles toegevoert. Extra pagin'as gemaakt, categorie heeft een pagina. ik heb een tabel gemaakt voor de openingsuren, de tekst bij de overons-pagina komt van hun website. 
+
+5/11/2018 opdracht van de week gemaakt 
+
+11/12/2018 Ik heb alles hermaakt want ik had de layout gedaan met float, nu heb ik het hermaakt met grid. Ik heb ook een slider, de code heb ik genomen wan de site w3school  en ik moet nog de tekst op de foto schrijven. De pagina's met producten is nog niet af. De over ons pagina moet er nog foto's op en de contact formulier moet ik nog maken. 
