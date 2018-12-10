@@ -1,0 +1,239 @@
+
+header { grid-area: header; }
+nav { grid-area: nav; }
+.item2 { grid-area: slider; }
+.categorie{grid-area: categorie;}
+.producten{ grid-area: producten}
+.Nieuwproducten { grid-area: nieuwproduct; }
+.infotekst { grid-area: tekst; } 
+.foto { grid-area: foto; }
+.openingsuren { grid-area: openingsuren; }
+.contact {grid-area: contact;}
+form  { grid-area: form; }
+footer { grid-area: footer; }
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+      'header header header header header'
+      'nav nav nav nav nav'
+      'categorie producten producten producten producten'
+      'slider slider slider slider slider'
+      'nieuwproduct nieuwproduct nieuwproduct nieuwproduct nieuwproduct'
+	   'tekst tekst tekst tekst tekst '
+      'foto foto openingsuren openingsuren openingsuren'
+      'foto foto contact contact contact'
+	  'form form form form form'
+      'footer footer footer footer footer'; 
+    grid-gap: 1%;
+    padding: 1%;
+}
+.grid{
+  display: grid;
+  height: auto;
+  width: 100%;
+  align-content: start;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2%;
+  padding: 2%; 
+    }
+
+header {
+ height: 100%;
+ background-color: #227fbd;
+}
+header img{
+    float: right;
+    width: 25%; 
+    padding: 1em;
+    margin-right: 20%
+}
+header h1{
+    float: left;
+    padding-left: 20%;
+    margin-top: 1em;
+    font-size: 2.5pc;
+}
+
+ nav{
+     height: auto;   
+    }
+    
+ ul {
+    overflow:hidden;
+    background-color: #333;
+    font-size: 25px;  
+    height: auto
+}
+
+article{
+    width: 80%;
+    height: 60%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+  /*padding:3% 0;*/
+    border: 3px;
+    border-color: black;
+    border-style: groove;
+    
+    }
+article img{
+    width: 60%;
+    margin: 2em;
+    
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: inherit;
+}
+
+.categorie li {
+    width: 100%;
+ 
+}
+.categorie h2{
+    margin-bottom: 2.5em;
+}
+
+div h2{
+   margin-bottom: 1.5em;
+   text-align: center;   
+}
+        
+ ul {
+    list-style-type: none;
+    background-color: #333;
+ 
+    
+}
+
+li {
+    float: left;
+    margin: 3px;
+    
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: inherit;
+   padding: 14px 16px;
+    text-decoration: none;
+}
+li img{
+	float: left;
+	width: 7%;
+}
+li a:hover {
+    background-color: #111;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 10px;
+	font-family: cursive;
+	font-size: 16px;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+    
+}
+table {
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 80%;
+}
+.contact p{
+	font-family: cursive;
+	font-size: 16px;
+	 margin: 20px;
+}
+
+.item2 {
+ height: auto;
+}
+.item3 {
+  
+}
+.Nieuwproducten{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 5em;
+}
+.Nieuwproducten h2{
+    font-size: 2.5pc;
+}
+.infotekst p{
+	font-size: 18px;
+}
+.infotekst{
+	margin-bottom: 5%;
+	margin-left: 3%;
+}
+form{
+	margin: 2%;
+}
+form p{
+	font-family: cursive;
+	font-size: 18px;
+}
+form input{
+	width: 30%;
+}
+
+footer{
+    height: auto;
+    width: 100%;
+    background-color: darkgray;
+    text-align: center;
+	margin-top: 3%;
+    }
+
+@media screen and (max-width:700px) {
+ ul, li {
+    width: 100%;
+  }
+}
+@media screen and (max-width:700px) {
+ .producten, nav, header, .catergorie, .grid-container{
+    grid-template-areas: 
+        'header'
+        'nav'
+        'slider'
+		'tekst'
+		'foto'
+		'contact'
+		'openingsuren'
+        'nieuwproduct'
+		'form'
+        'categorie'
+        'producten'
+        'footer';
+}
+}
+@media screen and (max-width:1000px) {
+ header h1,header img {
+    width:50%;  
+      padding-left:30%;text-align: center; float: none; margin-right:0em; 
+     
+  }
+}
+@media screen and (max-width:1000px) {
+  .grid{
+    grid-template-columns: auto auto auto;
+     
+  }
+}
+
+@media screen and (max-width:500px) {
+  .grid,slider{
+    grid-template-columns:  auto auto; width: 100%;
+     
+  }
+}

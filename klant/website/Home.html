@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home ATIT COMPUTERS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" type="text/css" href="externStyle.css">
+</head>
+<body>
+
+
+<div class="grid-container">
+    
+    <header>
+    <h1>ATIT COMPUTERS</h1>
+    <img src="logo.jpg.jpg" alt="Logo Atit computers" >
+    </header>
+    
+	
+    <nav> 
+    <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="product.html">Producten</a></li>
+    <li><a href="overons.html">Overons</a></li>
+    <li><a href="contact.html">contact</a></li>
+    </ul>
+    </nav>
+    
+    <!--dit is code van https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow //-->
+    
+  <div class="item2">
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="slider.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="slider.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+    
+  <div class="numbertext">3 / 3</div>
+  <img src="slider.jpg" style="width:100%">
+ 
+ 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div  style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    
+    </div>
+  <div class="Nieuwproducten"><h2>Nieuw</h2>
+      
+      <div class="grid">
+          
+      <article>
+          <h3>Backup</h3>
+          <img  src="Backup.png" alt="Backup"></article>
+      <article>
+          <h3>Digitaliseren van dia's</h3>
+          <img src="DigitaliserenVanDia.jpg" alt="Digitaliseren van dia's"></article>
+      <article>
+          <h3>Digitaliseren van film</h3>
+          <img src="DigitaliserenVanFilm.jpg" alt="Digitaliseren van film"></article>
+      <article>
+          <h3>Herinstelling WindowsS</h3>
+          <img src="HerinstallatieWindows.png" alt="Herinstallatie Windows"></article>
+      <article>
+          <h3>Herstelling</h3>
+          <img src="Herstelling.jpg" alt="Herstelling"></article>
+      <article>
+          <h3>Onderhoud</h3>
+          <img src="onderhoud.jpg" alt="Onderhoud"></article>
+      <article>
+          <h3>Recovery</h3>
+          <img src="recovery.png" alt="Recovery"></article>
+      <article>
+          <h3>Smartphone Reparaties</h3>
+          <img src="SmartphoneReparaties.jpg" alt="Smartphone reparaties"></article>
+     
+          
+    </div>
+      
+    </div>  
+  <footer><p>Atit Compuers<br> 
+Bergensesteenweg 41/01<br> 
+1500 Halle<br> 
+Tel: 0477/60.20.80<br> 
+Email: info@atitcomputers.be</p></footer>
+
+  
+</div>
+
+</body>
+</html>
