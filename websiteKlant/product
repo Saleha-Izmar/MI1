@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="Style.css">
+<style>
+    
+/*
+.item2 { grid-area: categorie; }
+.item3 { grid-area: product; }
+.item4 { grid-area: footer; }
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+      'header header header header header'
+      'categorie product product product product'
+      'categorie product product product product'
+      'categorie product product product product'
+      'categorie product product product product'
+      'footer footer footer footer footer';
+      
+  grid-gap: 10px;
+  background-color: rosybrown;
+  padding: 5px;
+}
+.grid{
+     display: grid;
+  height: 400px;
+  align-content: start;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  
+  padding: 10px; 
+    }
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+.item1 {
+ height: 100px;
+}
+.item2 {
+ 
+}
+.item3 {
+  
+}
+.itemx {
+  background-color: antiquewhite;
+    
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item4{
+      height: 100px;
+    }*/
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+    <header>
+    <h1>ATIT COMPUTERS</h1>
+    <img src="logo.jpg.jpg" alt="Logo Atit computers" >
+    </header>
+    
+    <nav> 
+    <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="producten&diensten.html">Producten</a></li>
+    <li><a href="overons.html">Overons</a></li>
+    <li><a href="contact.html">contact</a></li>
+    </ul>
+    </nav>
+  <div class="item2">categorie</div>
+  <div class="item3">producten
+      
+      <div class="grid">
+          
+      <article>
+          <h3>Backup</h3>
+          <img  src="Backup.png" alt="Backup"></article>
+      <article>
+          <h3>Digitaliseren van dia's</h3>
+          <img src="DigitaliserenVanDia.jpg" alt="Digitaliseren van dia's"></article>
+      <article>
+          <h3>Digitaliseren van film</h3>
+          <img src="DigitaliserenVanFilm.jpg" alt="Digitaliseren van film"></article>
+      <article>
+          <h3>Herinstelling WindowsS</h3>
+          <img src="HerinstallatieWindows.png" alt="Herinstallatie Windows"></article>
+      <article>
+          <h3>Herstelling</h3>
+          <img src="Herstelling.jpg" alt="Herstelling"></article>
+      <article>
+          <h3>Onderhoud</h3>
+          <img src="onderhoud.jpg" alt="Onderhoud"></article>
+      <article>
+          <h3>Recovery</h3>
+          <img src="recovery.png" alt="Recovery"></article>
+      <article>
+          <h3>Smartphone Reparaties</h3>
+          <img src="SmartphoneReparaties.jpg" alt="Smartphone reparaties">
+          </article>
+          
+          
+    </div>
+      
+    </div>  
+    <footer></footer>
+
+  
+</div>
+
+</body>
+</html>

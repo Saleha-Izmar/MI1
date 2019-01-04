@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<title>Home ATIT COMPUTERS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link rel="stylesheet" type="text/css" href="externStyle.css">
+</head>
+
+<body>
+
+
+	<div class="grid-container">
+		<nav>
+			<img src="logo.jpg.jpg" alt="Logo Atit computers">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="diensten.html">Producten 
+&amp; diensten</a></li>
+				<li><a href="overons.html">Over ons</a></li>
+				<li><a href="contact.html">Contactformulier</a></li>
+			</ul>
+		</nav>
+		<!--dit is code van https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
+
+		<div class="slider">
+			<h1>Welkom bij ATIT Computers</h1>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 3</div>
+					<img src="atitcomputer-binnenkant.jpg"  alt="winkel van Atit Computers">
+					<div class="tekstje">
+					<h3>ATIT Computers BVBA is een servicespeciaalzaak voor ICT</h3>
+						<p>U heeft een probleem met uw computer? Wenst een nieuwe laptop te kopen? U ziet door de bomen het bos niet meer?
+						Wij gidsen u graag door het ICT doolhof en vinden een oplossing op maat. </p></div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 3</div>
+					<img src="atitcomputer-buitenkant.jpg" alt="Atit Computers voordeur">
+					<div class="tekstje">
+					<h3>Support via:</h3>
+					<p>
+						-telefoon <br>
+						-e-mail <br>
+						-remote desktop <br>
+						-winkel <br>
+						-ter plaatse(zowel voor particulieren als KMO's
+						)
+					</p>
+						</div>
+				</div>
+
+				<div class="mySlides fade">
+
+					<div class="numbertext">3 / 3</div>
+					<img src="atitcomputer-aanhetwerk.jpg" alt=" computer van Atit Computers ">
+					<div  class="tekstje">
+					<h3>Een probleem met uw computer of laptop?</h3> <p>Aarzel niet langer en ervaar terug snelheid - en dit binnen de 48u!
+						Bel ons nu op 0477 60 20 80 of mail naar info@atitcomputers.be en uw probleem wordt het onze.</p></div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+
+			<script>
+				/*
+    dit is code van https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
+    */
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					if (n > slides.length) {
+						slideIndex = 1
+					}
+					if (n < 1) {
+						slideIndex = slides.length
+					}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex - 1].style.display = "block";
+					dots[slideIndex - 1].className += " active";
+				}
+			</script>
+			<!---- ----------------------------------------------------->
+
+		</div>
+		<div class="Nieuwproducten">
+			
+			<div class="rij">
+			<a href="diensten.html"><div class="test a">
+				<div class="doorzichtig"><h3>Onze diensten</h3>
+				</div></div></a> 
+			</div>
+			<div class="rij">
+					<a href="product.html">
+				<div class="test b">
+				<div class="doorzichtig"><h3>Onze producten</h3>
+					</div> </div></a> </div>
+				
+				<div class="rij">
+				<a href="overons.html"><div class="test c">
+				<div class="doorzichtig"><h3>Wie zijn we?</h3>
+				
+					</div></div></a></div>
+			
+			<div class="rij">
+					<a href="contact.html"><div class="test d">
+						<div class="doorzichtig"><h3>Contactformulier</h3></div></div></a></div>
+						
+					
+		
+			
+			</div>
+			
+			
+		<footer>
+			<p>Atit Computers <br></p>
+			<address>
+				Bergensesteenweg 41/01<br>
+				1500 Halle</address>
+			<p>Tel: 0477/60.20.80<br>
+				Email: info@atitcomputers.be</p>
+		</footer>
+
+
+	</div>
+
+</body>
+
+</html>
